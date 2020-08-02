@@ -1,4 +1,4 @@
-package Number29DivideTwoIntegers;
+package number29;
 
 /**
  * @author: Bright Chan

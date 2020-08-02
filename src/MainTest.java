@@ -1,4 +1,4 @@
-import Number29DivideTwoIntegers.Solution;
+import number30.Solution;
 
 /**
  * @author: Bright Chan
@@ -8,6 +8,8 @@ import Number29DivideTwoIntegers.Solution;
 public class MainTest {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(solution.divide(Integer.MIN_VALUE, 1));
+        String s = "barfoothefoobarman";
+        String[] words = {"foo","bar"};
+        System.out.println(solution.findSubstring(s, words));
     }
 }
