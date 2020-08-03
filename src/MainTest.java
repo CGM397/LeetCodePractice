@@ -1,4 +1,4 @@
-import number30.Solution;
+import number31.Solution;
 
 /**
  * @author: Bright Chan
@@ -8,8 +8,7 @@ import number30.Solution;
 public class MainTest {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        String s = "barfoothefoobarman";
-        String[] words = {"foo","bar"};
-        System.out.println(solution.findSubstring(s, words));
+        int[] nums = new int[]{1, 3, 2};
+        solution.nextPermutation(nums);
     }
 }
