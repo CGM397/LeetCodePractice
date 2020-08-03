@@ -1,4 +1,4 @@
-import number31.Solution;
+import number32.Solution;
 
 /**
  * @author: Bright Chan
@@ -8,7 +8,7 @@ import number31.Solution;
 public class MainTest {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        int[] nums = new int[]{1, 3, 2};
-        solution.nextPermutation(nums);
+        String s = ")()())";
+        System.out.println(solution.longestValidParentheses(s));
     }
 }
