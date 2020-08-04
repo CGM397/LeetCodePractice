@@ -8,7 +8,7 @@ import number32.Solution;
 public class MainTest {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        String s = ")()())";
+        String s = "(()";
         System.out.println(solution.longestValidParentheses(s));
     }
 }
