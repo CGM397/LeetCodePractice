@@ -3,7 +3,7 @@ package number31;
 /**
  * @author: Bright Chan
  * @date: 2020/8/3 12:37
- * @description: TODO
+ * @description: 查找下一个字典序
  */
 public class Solution {
     public void nextPermutation(int[] nums) {

@@ -3,7 +3,7 @@ package number29;
 /**
  * @author: Bright Chan
  * @date: 2020/7/23 21:53
- * @description: TODO
+ * @description: 位运算
  */
 public class Solution {
     public int failedMethod(int dividend, int divisor) {

@@ -1,4 +1,4 @@
-import number32.Solution;
+import number33.Solution;
 
 /**
  * @author: Bright Chan
@@ -8,7 +8,8 @@ import number32.Solution;
 public class MainTest {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        String s = "(()";
-        System.out.println(solution.longestValidParentheses(s));
+        int[] nums = new int[]{3,1};
+        int target = 1;
+        System.out.println(solution.search(nums, target));
     }
 }

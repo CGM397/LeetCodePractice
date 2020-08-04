@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * @author: Bright Chan
  * @date: 2020/8/1 15:50
- * @description: TODO
+ * @description: 子串匹配
  */
 public class Solution {
     public List<Integer> findSubstring(String s, String[] words) {

@@ -3,7 +3,7 @@ package number32;
 /**
  * @author: Bright Chan
  * @date: 2020/8/3 17:05
- * @description: TODO
+ * @description: 正逆向结合搜索
  */
 public class Solution {
     public int mySlowMethod(String s) {
