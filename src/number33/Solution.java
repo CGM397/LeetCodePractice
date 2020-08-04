@@ -19,6 +19,7 @@ public class Solution {
             if (target == midValue)
                 return middle;
             else if (target < midValue) {
+                //增加判断用于选择留下哪半边
                 if (startValue < target)
                     right = middle - 1;
                 else {
@@ -29,6 +30,7 @@ public class Solution {
                 }
             }
             else {
+                //增加判断用于选择留下哪半边
                 if (startValue > target)
                     left = middle + 1;
                 else {
@@ -41,4 +43,7 @@ public class Solution {
         }
         return -1;
     }
+    // 讨论区还有一个思路：二分搜索，如果中间的数小于最右边的数，则右半段是有序的，若中间数大于最右边数，
+    // 则左半段是有序的，我们只要在有序的半段里用首尾两个数组来判断目标值是否在这一区域内，这样就可以确定保留哪半边了
+    // 和我上面这个方法的思路差不多
 }
