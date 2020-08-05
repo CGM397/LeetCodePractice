@@ -1,4 +1,4 @@
-package number32;
+package Q1TO50.number32;
 
 /**
  * @author: Bright Chan

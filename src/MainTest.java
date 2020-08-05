@@ -1,4 +1,4 @@
-import number34.Solution;
+import Q1TO50.number35.Solution;
 
 /**
  * @author: Bright Chan
@@ -8,9 +8,9 @@ import number34.Solution;
 public class MainTest {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        int[] nums = new int[]{5,7,7,8,8,10};
-        int target = 6;
-        int[] res = solution.searchRange(nums, target);
-        System.out.println(res[0] + " " + res[1]);
+        int[] nums = new int[]{1,3,5,6};
+        int target = 2;
+        int res = solution.searchInsert(nums, target);
+        System.out.println(res);
     }
 }

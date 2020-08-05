@@ -1,4 +1,4 @@
-package number31;
+package Q1TO50.number31;
 
 /**
  * @author: Bright Chan

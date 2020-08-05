@@ -1,4 +1,4 @@
-package number30;
+package Q1TO50.number30;
 
 import java.util.ArrayList;
 import java.util.Collections;
