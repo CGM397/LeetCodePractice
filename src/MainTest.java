@@ -1,4 +1,4 @@
-import Q1TO50.number35.Solution;
+import Q1TO50.number36.Solution;
 
 /**
  * @author: Bright Chan
@@ -8,9 +8,8 @@ import Q1TO50.number35.Solution;
 public class MainTest {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        int[] nums = new int[]{1,3,5,6};
-        int target = 2;
-        int res = solution.searchInsert(nums, target);
+        char[][] board = new char[9][9];
+        boolean res = solution.isValidSudoku(board);
         System.out.println(res);
     }
 }
