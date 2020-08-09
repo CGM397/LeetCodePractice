@@ -1,4 +1,6 @@
-import Q1TO50.number38.Solution;
+import Q51TO100.number93.Solution;
+
+import java.util.List;
 
 /**
  * @author: Bright Chan
@@ -8,6 +10,8 @@ import Q1TO50.number38.Solution;
 public class MainTest {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(solution.countAndSay(30));
+        List<String> res = solution.restoreIpAddresses("25525511135");
+        for (String one : res)
+            System.out.println(one);
     }
 }
