@@ -1,6 +1,4 @@
-import Q1TO50.number39.Solution;
-
-import java.util.List;
+import Q1TO50.number40.Solution;
 
 /**
  * @author: Bright Chan
@@ -11,8 +9,8 @@ public class MainTest {
     public static void main(String[] args) {
         Solution solution = new Solution();
 
-        int[] candidates = new int[]{2, 3, 6, 7};
-        int target = 7;
-        solution.combinationSum(candidates, target);
+        int[] candidates = new int[]{1,1,2,5,6,7,10};
+        int target = 8;
+        System.out.println(solution.combinationSum2(candidates, target));
     }
 }
