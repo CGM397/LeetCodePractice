@@ -1,4 +1,4 @@
-import Q1TO50.number40.Solution;
+import Q1TO50.number41.Solution;
 
 /**
  * @author: Bright Chan
@@ -10,7 +10,6 @@ public class MainTest {
         Solution solution = new Solution();
 
         int[] candidates = new int[]{1,1,2,5,6,7,10};
-        int target = 8;
-        System.out.println(solution.combinationSum2(candidates, target));
+        System.out.println(solution.firstMissingPositive(candidates));
     }
 }
