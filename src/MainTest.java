@@ -1,4 +1,4 @@
-import Q1TO50.number42.Solution;
+import Q1TO50.number43.Solution;
 
 /**
  * @author: Bright Chan
@@ -9,7 +9,7 @@ public class MainTest {
     public static void main(String[] args) {
         Solution solution = new Solution();
 
-        int[] candidates = new int[]{0,1,0,2,1,0,1,3,2,1,2,1};
-        System.out.println(solution.trap(candidates));
+        String num1 = "123", num2 = "456";
+        System.out.println(solution.multiply(num1, num2));
     }
 }
