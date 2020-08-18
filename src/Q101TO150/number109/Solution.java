@@ -3,7 +3,7 @@ package Q101TO150.number109;
 /**
  * @author: Bright Chan
  * @date: 2020/8/18 12:17
- * @description: AVL树，平衡的二叉搜索树
+ * @description: AVL树，平衡的二叉搜索树，快慢指针，分治
  */
 public class Solution {
 
