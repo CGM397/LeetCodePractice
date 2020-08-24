@@ -1,4 +1,4 @@
-import Q201TO250.number201.Solution;
+import Q1TO50.number50.Solution;
 
 /**
  * @author: Bright Chan
@@ -9,7 +9,7 @@ public class MainTest {
     public static void main(String[] args) {
         Solution solution = new Solution();
 
-        System.out.println(solution.rangeBitwiseAnd(2147483646,
-                2147483647));
+        System.out.println(Math.pow(1, 0));
+        System.out.println(solution.myPow(2, -2147483648));
     }
 }
