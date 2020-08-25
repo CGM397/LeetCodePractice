@@ -1,4 +1,4 @@
-import Q1TO50.number50.Solution;
+import Q451TO500.number491.Solution;
 
 /**
  * @author: Bright Chan
@@ -9,7 +9,7 @@ public class MainTest {
     public static void main(String[] args) {
         Solution solution = new Solution();
 
-        System.out.println(Math.pow(1, 0));
-        System.out.println(solution.myPow(2, -2147483648));
+        int[] nums = new int[]{4, 6, 7, 7, 1, 1};
+        System.out.println(solution.findSubsequences(nums));
     }
 }
