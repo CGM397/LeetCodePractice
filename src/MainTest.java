@@ -1,4 +1,4 @@
-import Q451TO500.number491.Solution;
+import Q51TO100.number51.Solution;
 
 /**
  * @author: Bright Chan
@@ -9,7 +9,6 @@ public class MainTest {
     public static void main(String[] args) {
         Solution solution = new Solution();
 
-        int[] nums = new int[]{4, 6, 7, 7, 1, 1};
-        System.out.println(solution.findSubsequences(nums));
+        System.out.println(solution.solveNQueens(4));
     }
 }

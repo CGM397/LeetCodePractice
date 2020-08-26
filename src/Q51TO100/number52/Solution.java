@@ -1,19 +1,18 @@
-package Q51TO100.number51;
+package Q51TO100.number52;
 
 import java.util.*;
 
 /**
  * @author: Bright Chan
- * @date: 2020/8/24 17:55
+ * @date: 2020/8/26 11:01
  * @description: N皇后
  */
 public class Solution {
-
     private List<Boolean> cols = new ArrayList<>();
     private Map<Integer, String> store = new HashMap<>();
-    private List<List<String>> res = new ArrayList<>();
+    private int res = 0;
 
-    public List<List<String>> solveNQueens(int n) {
+    public int totalNQueens(int n) {
         for (int i = 0; i < n; i++) {
             cols.add(false);
         }
@@ -23,16 +22,7 @@ public class Solution {
 
     private void backTracking(int pos, int n) {
         if (pos == n) {
-            List<String> one = new ArrayList<>();
-            for (int i = 0; i < n; i++) {
-                char[] oneRow = new char[n];
-                Arrays.fill(oneRow, '.');
-                String[] tmp = store.get(i).split(";");
-                int col = Integer.parseInt(tmp[1]);
-                oneRow[col] = 'Q';
-                one.add(new String(oneRow));
-            }
-            res.add(one);
+            res++;
             return;
         }
 
