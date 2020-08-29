@@ -1,4 +1,5 @@
-import Q51TO100.number51.Solution;
+import Q201TO250.number214.Solution;
+import someAlgorithms.stringMatch.KMP;
 
 /**
  * @author: Bright Chan
@@ -9,6 +10,13 @@ public class MainTest {
     public static void main(String[] args) {
         Solution solution = new Solution();
 
-        System.out.println(solution.solveNQueens(4));
+        System.out.println(solution.shortestPalindrome("acd"));
+        KMP kmp = new KMP();
+        int[] next = kmp.getNext("1111");
+        for (int i : next) {
+            System.out.print(i + " ");
+        }
+        System.out.println();
+        System.out.println(kmp.kmp("123121", "21"));
     }
 }
