@@ -3,7 +3,7 @@ package Q51TO100.number55;
 /**
  * @author: Bright Chan
  * @date: 2020/8/29 16:50
- * @description: 回溯算法
+ * @description: 数组
  */
 public class Solution {
 
