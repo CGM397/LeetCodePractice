@@ -3,7 +3,7 @@ package Q51TO100.number62;
 /**
  * @author: Bright Chan
  * @date: 2020/9/7 16:54
- * @description: 简单回溯会超时
+ * @description: 简单回溯会超时，要用动态规划
  */
 public class Solution {
 
