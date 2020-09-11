@@ -1,6 +1,5 @@
-import Q51TO100.number56.Solution;
-import someAlgorithms.sort.exchange.BubbleSort;
-import someAlgorithms.sort.exchange.QuickSort;
+import Q201TO250.number216.Solution;
+
 
 
 /**
@@ -12,12 +11,5 @@ public class MainTest {
     public static void main(String[] args) {
         Solution solution = new Solution();
 
-        QuickSort quickSort = new QuickSort();
-        BubbleSort bubbleSort = new BubbleSort();
-        int[] arr = {10,7,2,4,7,62,3,4,2,1,8,9,19};
-        quickSort.sort(arr);
-        for (int i : arr) {
-            System.out.print(i + " ");
-        }
     }
 }
