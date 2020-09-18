@@ -17,26 +17,27 @@ public class Solution {
     public List<List<Integer>> permuteUnique(int[] nums) {
         flag = new boolean[nums.length];
         Arrays.fill(flag, false);
+        Arrays.sort(nums);
         backTracking(0, nums);
         return res;
     }
 
     private void backTracking(int pos, int[] nums) {
         if (pos == nums.length) {
-            if (res.contains(one)) return;
             List<Integer> oneRes = new ArrayList<>(one);
             res.add(oneRes);
             return;
         }
 
         for (int i = 0; i < nums.length; i++) {
-            if (!flag[i]) {
-                flag[i] = true;
-                one.add(pos, nums[i]);
-                backTracking(pos + 1, nums);
-                flag[i] = false;
-                one.remove(pos);
+            if (flag[i] || (i > 0 && nums[i] == nums[i - 1] && !flag[i - 1])) {
+                continue;
             }
+            flag[i] = true;
+            one.add(nums[i]);
+            backTracking(pos + 1, nums);
+            flag[i] = false;
+            one.remove(pos);
         }
     }
 }
