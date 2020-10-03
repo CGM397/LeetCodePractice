@@ -1,4 +1,4 @@
-import Q201TO250.number216.Solution;
+import Q51TO100.number69.Solution;
 
 
 
@@ -10,6 +10,6 @@ import Q201TO250.number216.Solution;
 public class MainTest {
     public static void main(String[] args) {
         Solution solution = new Solution();
-
+        System.out.println(solution.mySqrt(2147395600));
     }
 }
