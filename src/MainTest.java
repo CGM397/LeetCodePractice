@@ -1,4 +1,4 @@
-import Q401TO450.number416.Solution;
+import Q1351TO1400.number1356.Solution;
 
 
 
@@ -11,6 +11,6 @@ public class MainTest {
     public static void main(String[] args) {
         Solution solution = new Solution();
         int[] nums = new int[] {1,3,5,7};
-        System.out.println(solution.canPartition(nums));
+        solution.sortByBits(nums);
     }
 }

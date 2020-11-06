@@ -8,8 +8,8 @@ import java.util.*;
  * @description: BFS
  */
 public class Solution {
-    Map<String, Integer> wordId = new HashMap<String, Integer>();
-    List<List<Integer>> edge = new ArrayList<List<Integer>>();
+    Map<String, Integer> wordId = new HashMap<>();
+    List<List<Integer>> edge = new ArrayList<>();
     int nodeNum = 0;
 
     public int ladderLength(String beginWord, String endWord, List<String> wordList) {
@@ -25,14 +25,14 @@ public class Solution {
         Arrays.fill(disBegin, Integer.MAX_VALUE);
         int beginId = wordId.get(beginWord);
         disBegin[beginId] = 0;
-        Queue<Integer> queBegin = new LinkedList<Integer>();
+        Queue<Integer> queBegin = new LinkedList<>();
         queBegin.offer(beginId);
 
         int[] disEnd = new int[nodeNum];
         Arrays.fill(disEnd, Integer.MAX_VALUE);
         int endId = wordId.get(endWord);
         disEnd[endId] = 0;
-        Queue<Integer> queEnd = new LinkedList<Integer>();
+        Queue<Integer> queEnd = new LinkedList<>();
         queEnd.offer(endId);
 
         while (!queBegin.isEmpty() && !queEnd.isEmpty()) {
