@@ -1,4 +1,4 @@
-import Q1351TO1400.number1356.Solution;
+import Q751TO800.number767.Solution;
 
 
 
@@ -10,7 +10,7 @@ import Q1351TO1400.number1356.Solution;
 public class MainTest {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        int[] nums = new int[] {1,3,5,7};
-        solution.sortByBits(nums);
+        String S = "eqpspvbpppwpgyppppe";
+        System.out.println(solution.reorganizeString(S));
     }
 }
