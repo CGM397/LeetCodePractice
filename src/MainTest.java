@@ -1,4 +1,4 @@
-import Q751TO800.number767.Solution;
+import Q701TO750.number714.Solution;
 
 
 
@@ -10,7 +10,8 @@ import Q751TO800.number767.Solution;
 public class MainTest {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        String S = "eqpspvbpppwpgyppppe";
-        System.out.println(solution.reorganizeString(S));
+        int[] prices = new int[]{4,5,2,4,3,3,1,2,5,4};
+        int fee = 1;
+        System.out.println(solution.maxProfit(prices, fee));
     }
 }
