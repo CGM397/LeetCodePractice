@@ -1,4 +1,4 @@
-import Q701TO750.number714.Solution;
+import someAlgorithms.sort.insertion.ShellSort;
 
 
 
@@ -9,9 +9,9 @@ import Q701TO750.number714.Solution;
  */
 public class MainTest {
     public static void main(String[] args) {
-        Solution solution = new Solution();
-        int[] prices = new int[]{4,5,2,4,3,3,1,2,5,4};
-        int fee = 1;
-        System.out.println(solution.maxProfit(prices, fee));
+        ShellSort sort = new ShellSort();
+        int[] store = new int[]{1,1,1,2,1,1};
+        sort.sort(store);
+        for (int i : store) System.out.println(i);
     }
 }
