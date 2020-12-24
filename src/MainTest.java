@@ -1,4 +1,4 @@
-import someAlgorithms.sort.insertion.ShellSort;
+import someAlgorithms.sort.selection.SelectionSort;
 
 
 
@@ -9,8 +9,8 @@ import someAlgorithms.sort.insertion.ShellSort;
  */
 public class MainTest {
     public static void main(String[] args) {
-        ShellSort sort = new ShellSort();
-        int[] store = new int[]{1,1,1,2,1,1};
+        SelectionSort sort = new SelectionSort();
+        int[] store = new int[]{2,4,7,5,8,1,3,6};
         sort.sort(store);
         for (int i : store) System.out.println(i);
     }
