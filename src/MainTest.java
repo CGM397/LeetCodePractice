@@ -1,4 +1,4 @@
-import someAlgorithms.sort.selection.SelectionSort;
+import someAlgorithms.sort.RadixSort;
 
 
 
@@ -9,9 +9,9 @@ import someAlgorithms.sort.selection.SelectionSort;
  */
 public class MainTest {
     public static void main(String[] args) {
-        SelectionSort sort = new SelectionSort();
+        RadixSort sort = new RadixSort();
         int[] store = new int[]{2,4,7,5,8,1,3,6};
-        sort.sort(store);
+        store = sort.sort(store);
         for (int i : store) System.out.println(i);
     }
 }
