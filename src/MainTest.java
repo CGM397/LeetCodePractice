@@ -1,4 +1,4 @@
-import someAlgorithms.sort.RadixSort;
+import algorithms.search.BinarySearch;
 
 
 
@@ -9,9 +9,8 @@ import someAlgorithms.sort.RadixSort;
  */
 public class MainTest {
     public static void main(String[] args) {
-        RadixSort sort = new RadixSort();
-        int[] store = new int[]{2,4,7,5,8,1,3,6};
-        store = sort.sort(store);
-        for (int i : store) System.out.println(i);
+        BinarySearch search = new BinarySearch();
+        int[] store = new int[]{1,3,5,7,9,11};
+        System.out.println(search.search(store, 11));
     }
 }
