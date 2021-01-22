@@ -63,4 +63,19 @@ public class OneDimension {
         }
         return parent[node];
     }
+
+    // 判断两个节点是否属于同一个集合
+    public boolean inSameSet(int[] parents, int node1, int node2) {
+        return findParent(parents, node1) == findParent(parents, node2);
+    }
+
+    // 得到集合数
+    public int getSetNum(int[] parents) {
+        int count = 0;
+
+        for (int i = 0; i < parents.length; i++) {
+            if (parents[i] == i) count++;
+        }
+        return count;
+    }
 }
