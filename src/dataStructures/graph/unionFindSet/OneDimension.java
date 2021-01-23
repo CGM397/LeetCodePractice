@@ -57,6 +57,7 @@ public class OneDimension {
     }
 
     // 路径压缩优化后的合并操作
+    // 要记得，findParent方法不是找到直接父节点，而是根节点
     public int findParent(int[] parent, int node) {
         if (parent[node] != node) {
             parent[node] = findParent(parent, parent[node]);
