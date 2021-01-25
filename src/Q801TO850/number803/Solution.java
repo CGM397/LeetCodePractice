@@ -6,6 +6,72 @@ package Q801TO850.number803;
  * @description: 并查集
  */
 public class Solution {
+
+    // my solution
+//    public int[] hitBricks(int[][] grid, int[][] hits) {
+//        int m = grid.length;
+//        int n = grid[0].length;
+//        List<Node> parents = new ArrayList<>();
+//        Map<Integer, Node> indexToNode = new HashMap<>();
+//        for (int i = 0; i < m; i++) {
+//            for (int j = 0; j < n; j++) {
+//                if (grid[i][j] == 1) {
+//                    Node node = new Node(null, null, i, j, 0);
+//                    parents.add(node);
+//                    // 将二维数组映射为一维数组
+//                    // i, j -> i * m + j (按 行顺序 映射)
+//                    indexToNode.put(i * m + j, node);
+//                }
+//            }
+//        }
+//
+//
+//        return null;
+//    }
+//
+//    private static class Node {
+//        public Node parent;
+//
+//        public Node child;
+//
+//        public int x;
+//
+//        public int y;
+//
+//        public int rank;
+//
+//        public Node (Node parent, Node child, int x, int y, int rank) {
+//            this.parent = parent;
+//            this.child = child;
+//            this.x = x;
+//            this.y = y;
+//            this.rank = rank;
+//        }
+//    }
+//
+//    private void union(Node parent1, Node parent2) {
+//        if (parent1.rank > parent2.rank) {
+//            parent2.parent = parent1;
+//        }
+//        else {
+//            parent1.parent = parent2;
+//
+//            if (parent1.rank == parent2.rank) {
+//                parent2.rank++;
+//            }
+//        }
+//    }
+//
+//    private Node findParent(Node node) {
+//        if (node.parent != null) {
+//            return findParent(node.parent);
+//        }
+//        else {
+//            return node;
+//        }
+//    }
+    
+    // official solution
     private int rows;
     private int cols;
 
