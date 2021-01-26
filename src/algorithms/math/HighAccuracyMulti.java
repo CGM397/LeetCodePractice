@@ -5,17 +5,17 @@ package algorithms.math;
  * @date: 2020/8/24 17:51
  * @description: 高精度，竖式乘法
  */
-public class HighAccuracy {
+public class HighAccuracyMulti {
 
-    public String multiply(String num1, String num2) {
+    public String multiply(int len, String num1, String num2) {
         if (num1.equals("0") || num2.equals("0")) return "0";
 
         // 可以指定结果长度
-        int[] res = new int[220];
+        int[] res = new int[len];
         int carry = 0, pos = res.length - 1;
         for (int i = num1.length() - 1; i >= 0; i--) {
             for (int j = num2.length() - 1; j >= 0; j--) {
-                pos = 220 + i - num1.length() + j - num2.length() + 1;
+                pos = len + i - num1.length() + j - num2.length() + 1;
                 res[pos] += carry + (num1.charAt(i) - '0') * (num2.charAt(j) - '0');
                 if (res[pos] >= 10) {
                     carry = res[pos] / 10;

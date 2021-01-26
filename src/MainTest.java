@@ -1,4 +1,4 @@
-import algorithms.search.BinarySearch;
+import algorithms.math.HighAccuracyAdd;
 
 
 
@@ -9,8 +9,7 @@ import algorithms.search.BinarySearch;
  */
 public class MainTest {
     public static void main(String[] args) {
-        BinarySearch search = new BinarySearch();
-        int[] store = new int[]{1,3,5,7,9,11};
-        System.out.println(search.search(store, 11));
+        HighAccuracyAdd accuracyAdd = new HighAccuracyAdd();
+        System.out.println(accuracyAdd.add("131", "912312"));
     }
 }
