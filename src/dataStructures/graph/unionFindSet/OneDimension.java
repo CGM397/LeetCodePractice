@@ -30,6 +30,7 @@ public class OneDimension {
             int parent2 = findParent(parents, node2);
 
             // 两个有关联的点还不在一个集合中，就将它们所在的集合合并
+            // 注意，传入的是两个根节点
             if (parent1 != parent2) {
                 union(parents, ranks, parent1, parent2);
             }

@@ -19,6 +19,7 @@ public class Solution {
 
         for (int i = 0; i < len - 1; i++) {
             for (int j = i + 1; j < len; j++) {
+                // i 的findParent不能写在这一层循环的外面，因为每一次union的时候可能会导致i的parent发生变化
                 int parent1 = findParent(parents, i);
                 int parent2 = findParent(parents, j);
                 if (parent1 != parent2 && isSimilar(strLen, strs[i], strs[j])) {
