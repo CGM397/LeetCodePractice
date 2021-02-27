@@ -29,7 +29,7 @@ public class Solution {
             add(root, sb.toString());
         }
 
-        List<Integer> ans = new ArrayList<Integer>();
+        List<Integer> ans = new ArrayList<>();
         for (String puzzle : puzzles) {
             char required = puzzle.charAt(0);
             char[] arr = puzzle.toCharArray();
