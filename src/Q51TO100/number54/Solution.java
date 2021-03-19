@@ -60,4 +60,55 @@ public class Solution {
 
         return res;
     }
+
+    public List<Integer> anotherMethod(int[][] matrix) {
+        // 0: right; 1: down; 2: left; 3: up;
+        int flag = 0;
+        int count = 0, num = matrix.length * matrix[0].length;
+        int x = 0, y = 0;
+        List<Integer> res = new ArrayList<>();
+
+        while (count < num) {
+            res.add(matrix[x][y]);
+            matrix[x][y] = 101;
+            if (flag == 0) {
+                if (y == matrix[0].length - 1 || matrix[x][y + 1] == 101) {
+                    flag = 1;
+                    x++;
+                }
+                else {
+                    y++;
+                }
+            }
+            else if (flag == 1) {
+                if ( x == matrix.length - 1 || matrix[x + 1][y] == 101) {
+                    flag = 2;
+                    y--;
+                }
+                else {
+                    x++;
+                }
+            }
+            else if (flag == 2) {
+                if (y == 0 || matrix[x][y - 1] == 101) {
+                    flag = 3;
+                    x--;
+                }
+                else {
+                    y--;
+                }
+            }
+            else {
+                if (x == 0 || matrix[x - 1][y] == 101) {
+                    flag = 0;
+                    y++;
+                }
+                else {
+                    x--;
+                }
+            }
+            count++;
+        }
+        return res;
+    }
 }
