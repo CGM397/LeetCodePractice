@@ -1,4 +1,4 @@
-import algorithms.math.HighAccuracyAdd;
+import Q101TO150.number150.Solution;
 
 
 
@@ -9,7 +9,8 @@ import algorithms.math.HighAccuracyAdd;
  */
 public class MainTest {
     public static void main(String[] args) {
-        HighAccuracyAdd accuracyAdd = new HighAccuracyAdd();
-        System.out.println(accuracyAdd.add("131", "912312"));
+        Solution solution = new Solution();
+        String[] tokens = new String[]{"4", "13", "5", "/", "+"};
+        System.out.println(solution.evalRPN(tokens));
     }
 }
