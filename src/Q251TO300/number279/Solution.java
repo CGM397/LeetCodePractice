@@ -3,32 +3,22 @@ package Q251TO300.number279;
 /**
  * @author: Bright Chan
  * @date: 2021/3/29 15:30
- * @description: TODO
+ * @description: dp
  */
 public class Solution {
     public int numSquares(int n) {
-        dfs((int) Math.sqrt(n), n, 0);
-        return count;
-    }
+        int[] dp = new int[n + 1];
+        dp[0] = 0;
+        dp[1] = 1;
 
-    private int count = 0;
-    private boolean find = false;
-    private void dfs (int num, int n, int sum) {
-        if (find) {
-            return;
+        for (int i = 2; i <= n; i++) {
+            int max = (int) Math.sqrt(i);
+            int min = Integer.MAX_VALUE;
+            for (int j = 1; j <= max; j++) {
+                min = Math.min(min, dp[i - j * j] + 1);
+            }
+            dp[i] = min;
         }
-
-        int tmp = sum + num * num;
-        if (tmp > n) {
-            dfs(num - 1, n, sum);
-        }
-        else if (tmp == n) {
-            count++;
-            find = true;
-        }
-        else {
-            count++;
-            dfs(num, n, tmp);
-        }
+        return dp[n];
     }
 }
