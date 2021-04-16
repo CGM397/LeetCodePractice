@@ -12,8 +12,9 @@ public class ShellSort {
 
         int len = store.length;
 
+        // 做多次插入排序，每次的间隔都在变小直至为1
         for (int gap = len / 2; gap > 0; gap = gap / 2) {
-            // 分组做插入排序
+            // 每两个元素隔一个gap的距离，做插入排序
             for (int i = gap; i < len; i++) {
                 int j = i, current = store[i];
 
