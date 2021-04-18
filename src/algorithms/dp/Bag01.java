@@ -16,14 +16,14 @@ public class Bag01 {
             dp[i][0] = 0;
         }
 
-        // 前 i - 1 件物品放入容量为j的背包的最优解
+        // 前 i 件（下标为 i - 1）物品放入容量为 j 的背包的最优解
         for (int i = 1; i <= len; i++) {
             for (int j = 1; j <= V; j++) {
                 if (j >= v[i - 1]) {
                     dp[i][j] = Math.max(dp[i - 1][j], dp[i - 1][j - v[i - 1]] + w[i - 1]);
                 }
                 else {
-                    // 第 i - 1 件物品的体积大于j，所以不会将它放入
+                    // 第 i 件物品的体积大于j，所以不会将它放入
                     dp[i][j] = dp[i - 1][j];
                 }
             }
