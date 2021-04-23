@@ -5,7 +5,7 @@ import java.util.TreeSet;
 /**
  * @author: Bright Chan
  * @date: 2021/4/22 12:38
- * @description: 动态规划
+ * @description: 区间
  */
 public class Solution {
     public int maxSumSubmatrix(int[][] matrix, int k) {
