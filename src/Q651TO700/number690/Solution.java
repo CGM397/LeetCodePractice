@@ -34,5 +34,5 @@ public class Solution {
         public int id;
         public int importance;
         public List<Integer> subordinates;
-    };
+    }
 }
