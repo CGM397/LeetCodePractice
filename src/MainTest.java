@@ -1,4 +1,4 @@
-import Q101TO150.number150.Solution;
+import Q1TO50.number07.Solution;
 
 
 
@@ -10,7 +10,6 @@ import Q101TO150.number150.Solution;
 public class MainTest {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        String[] tokens = new String[]{"4", "13", "5", "/", "+"};
-        System.out.println(solution.evalRPN(tokens));
+        System.out.println(solution.reverse(1563847412));
     }
 }
