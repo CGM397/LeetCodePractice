@@ -1,4 +1,4 @@
-import Q1TO50.number07.Solution;
+import shopee.practice01.Solution;
 
 
 
@@ -10,6 +10,6 @@ import Q1TO50.number07.Solution;
 public class MainTest {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(solution.reverse(1563847412));
+        System.out.println(solution.romanToInt("LVIII"));
     }
 }
