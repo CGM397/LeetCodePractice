@@ -1,4 +1,4 @@
-import shopee.practice01.Solution;
+import shopee.number02.Solution;
 
 
 
@@ -10,6 +10,9 @@ import shopee.practice01.Solution;
 public class MainTest {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(solution.romanToInt("LVIII"));
+        int[][] rooms = new int[][] {{-2,-3,3},{-5,-10,1},{10,30,-5}};
+        int[] statPoint = new int[] {0, 0};
+        int[] endPoint = new int[] {2, 2};
+        System.out.println(solution.minimumInitHealth(rooms, statPoint, endPoint));
     }
 }
