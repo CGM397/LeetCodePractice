@@ -17,7 +17,7 @@ public class Solution {
         }
         int maxSum = maxVal * 2;
         int pairs = 0;
-        Map<Integer, Integer> map = new HashMap<Integer, Integer>();
+        Map<Integer, Integer> map = new HashMap<>();
         for (int val : deliciousness) {
             for (int sum = 1; sum <= maxSum; sum <<= 1) {
                 int count = map.getOrDefault(sum - val, 0);
