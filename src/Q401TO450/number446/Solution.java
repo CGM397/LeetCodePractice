@@ -14,7 +14,7 @@ public class Solution {
         int n = nums.length;
         Map<Long, Integer>[] f = new Map[n];
         for (int i = 0; i < n; ++i) {
-            f[i] = new HashMap<Long, Integer>();
+            f[i] = new HashMap<>();
         }
         for (int i = 0; i < n; ++i) {
             for (int j = 0; j < i; ++j) {
