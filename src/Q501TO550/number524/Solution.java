@@ -5,7 +5,7 @@ import java.util.List;
 /**
  * @author: Bright Chan
  * @date: 2021/9/14 15:50
- * @description: TODO
+ * @description: 双指针
  */
 public class Solution {
     public String findLongestWord(String s, List<String> dictionary) {
