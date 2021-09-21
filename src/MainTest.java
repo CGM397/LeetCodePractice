@@ -1,4 +1,4 @@
-import shopee.number02.Solution;
+import microsoft.number02.Solution;
 
 
 
@@ -10,9 +10,8 @@ import shopee.number02.Solution;
 public class MainTest {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        int[][] rooms = new int[][] {{-2,-3,3},{-5,-10,1},{10,30,-5}};
-        int[] statPoint = new int[] {0, 0};
-        int[] endPoint = new int[] {2, 2};
-        System.out.println(solution.minimumInitHealth(rooms, statPoint, endPoint));
+        int[] A = new int[] {2,3,3,5,8};
+        int X = 2, Y = 5;
+        System.out.println(solution.solution(A, X, Y));
     }
 }
