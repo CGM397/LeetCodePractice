@@ -10,29 +10,17 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int t = scanner.nextInt();
-        scanner.nextLine();
-
-        for (int i = 0; i < t; i++) {
-            int a = scanner.nextInt(), b = scanner.nextInt();
-            scanner.nextLine();
-            System.out.println(getRealSix(a, b));
-        }
+        int a = scanner.nextInt(), b = scanner.nextInt();
+        System.out.println(getRealSix(a, b));
     }
 
     private static int getRealSix(int a, int b) {
-        String searchChar = "6";
         int res = 0;
 
         for (int i = a; i <= b; i++) {
             String cast = String.valueOf(i);
-            if (cast.indexOf('6') != -1 && cast.indexOf('8') != -1) {
-                int originLen = cast.length();
-
-                cast = cast.replace(searchChar, "");
-                int newLen = cast.length();
-
-                res += originLen - newLen;
+            if (cast.indexOf('6') != -1 || cast.contains("17")) {
+                res++;
             }
         }
 
