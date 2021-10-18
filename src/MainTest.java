@@ -1,4 +1,4 @@
-import microsoft.number02.Solution;
+import microsoft.number04.Solution;
 
 
 
@@ -10,8 +10,7 @@ import microsoft.number02.Solution;
 public class MainTest {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        int[] A = new int[] {2,3,3,5,8};
-        int X = 2, Y = 5;
-        System.out.println(solution.solution(A, X, Y));
+        String[] A = new String[] {"abc","edf", "erg", "rg"};
+        System.out.println(solution.solution(A));
     }
 }
