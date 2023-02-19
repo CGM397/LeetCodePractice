@@ -1,7 +1,5 @@
 import microsoft.number04.Solution;
 
-
-
 /**
  * @author: Bright Chan
  * @date: 2020/7/23 21:37
